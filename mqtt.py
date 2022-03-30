@@ -1,3 +1,6 @@
+#Amanda Florian - 590673
+#Rafael Pereira - 587761
+
 
 import paho.mqtt.client as mqtt
 import requests
@@ -19,7 +22,7 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect("mqtt.eclipseprojects.io", 1883, 60)
+client.connect("localhost", 1883, 60)
 
 # Blocking call that processes network traffic, dispatches callbacks and
 # handles reconnecting.
